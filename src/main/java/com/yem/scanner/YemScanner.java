@@ -176,7 +176,7 @@ public class YemScanner extends BorderPane {
         if (Boite.verifier(tscanner, tsourceP)) {
             Request request = new Request();
             request.setI18n("lang", "fr");
-            request.addOutputItem(new RequestOutputItem(Imaging.OUTPUT_SAVE, Imaging.FORMAT_PNG)
+            request.addOutputItem(new RequestOutputItem(Imaging.OUTPUT_SAVE, Imaging.FORMAT_JPG)
                     .setSavePath("${TMP}\\\\${TMS}${EXT}"));
 
             CapOptions.CapOptionItem it = tsourceP.getValue();
@@ -352,4 +352,5 @@ public class YemScanner extends BorderPane {
             ex.printStackTrace();
         }
     }
+
 }
